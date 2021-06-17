@@ -466,7 +466,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .card {
-    margin-bottom: 6rem; } }
+    margin-bottom: 4rem; } }
 
 .card__details {
   padding: 0 2rem 0 2rem;
@@ -481,6 +481,9 @@ body {
     .card__details {
       float: none;
       width: 100%; } }
+  @media only screen and (max-width: 37.5em) {
+    .card__details {
+      height: 45rem; } }
 
 .card__picture {
   float: left;
@@ -993,7 +996,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
-      padding: 0 3rem; } }
+      padding: 0 2rem; } }
   .row::after {
     content: "";
     display: table;

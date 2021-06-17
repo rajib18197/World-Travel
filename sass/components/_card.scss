@@ -1,6 +1,6 @@
 .card {
   @include respond(tab-port) {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   &__details {
@@ -20,6 +20,9 @@
     @include respond(tab-port) {
       float: none;
       width: 100%;
+    }
+    @include respond(phone) {
+      height: 45rem;
     }
   }
   &__picture {
