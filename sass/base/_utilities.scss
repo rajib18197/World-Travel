@@ -1,0 +1,33 @@
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-large {
+  margin-bottom: 2.2rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.u-margin-bottom-extraLarge {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-extraLarge {
+  margin-top: 8rem;
+}
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+.text-color {
+  color: $color-light-white !important;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+.u-text {
+  text-align: center !important;
+}
+.text-color {
+  color: $color-grey-dark-3 !important;
+}

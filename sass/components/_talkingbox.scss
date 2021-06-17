@@ -1,0 +1,79 @@
+.talking {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-dark,
+      $color-secondary-light
+    );
+    position: fixed;
+    right: 2rem;
+    bottom: 4rem;
+    z-index: 2000;
+    cursor: pointer;
+    &-icon {
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: $color-tertiary-light;
+    }
+  }
+
+  &__box {
+    height: 30rem;
+    width: 30rem;
+    padding: 2rem;
+    background-color: $color-light-white;
+    background-image: linear-gradient(
+      to right,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-light, 0.8)
+    );
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: 4rem;
+    bottom: 10rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.8s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    z-index: 1000;
+    &--paragraph {
+      color: $color-light-white;
+      &-1 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__content {
+    height: 100vh;
+    width: 100%;
+    padding: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    transition: all 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.8s;
+  }
+  &__img {
+    height: 3.5rem;
+  }
+  &__heading {
+    font-size: 1.5rem;
+    color: $color-light-white;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__checkbox:checked ~ &__box {
+    transform: scale(1);
+  }
+}

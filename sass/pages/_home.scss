@@ -1,0 +1,94 @@
+#section-about {
+  padding: 20rem 0 30rem 0;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+#section-tours {
+  padding: 20rem 0;
+  margin-top: -5rem;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+#section-services {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.6),
+      rgba($color-primary-dark, 0.6)
+    ),
+    url(../img/nature1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+  transform: skewY(-4deg);
+  & > * {
+    transform: skewY(4deg);
+  }
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
+#section-book {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-light
+  );
+}
+.book {
+  height: 50rem;
+  background-image: linear-gradient(
+      -90deg,
+      rgba($color-light-white, 0.9) 0%,
+      rgba($color-light-white, 0.9) 70%,
+      transparent 70%
+    ),
+    url(../img/city.jpg);
+  background-size: 100%;
+  background-position: center;
+  box-shadow: 0 2rem 4rem rgba($color-deep, 0.2);
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        -90deg,
+        rgba($color-light-white, 0.9) 0%,
+        rgba($color-light-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/city.jpg);
+    background-size: cover;
+    margin: 0 2rem;
+  }
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        -90deg,
+        rgba($color-light-white, 0.9) 0%,
+        rgba($color-light-white, 0.9) 100%
+      ),
+      url(../img/city.jpg);
+  }
+  @include respond(tab-port) {
+    margin: 0;
+  }
+
+  &__form {
+    width: 70%;
+    padding: 4rem;
+    float: right;
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+}
+#section-testimonials {
+  position: relative;
+  padding: 15rem 0;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}

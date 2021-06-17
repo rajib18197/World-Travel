@@ -1,0 +1,358 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem 4rem;
+    border: none;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.6s;
+  }
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
+    transform: translateY(-3px);
+
+    &::after {
+      transform: scaleX(1.6) scaleY(1.4);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-white, 0.2);
+    transform: translateY(-1px);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark-3;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-color: $color-white;
+    }
+  }
+
+  &--orangered {
+    background-color: $color-primary;
+    color: $color-light-white;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-color: $color-primary;
+    }
+  }
+  &--green {
+    background-color: green;
+    color: $color-light-white;
+  }
+
+  &--animated {
+    animation: moveInBottom 1s ease-in 0.7s backwards;
+  }
+}
+.btn-talk {
+  &:link,
+  &:visited {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10rem;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    position: relative;
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: $color-white;
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.2s;
+    @include respond(tab-land) {
+      padding: 1rem 2rem;
+    }
+    @include respond(tab-port) {
+      letter-spacing: 0.1rem;
+      font-size: 1.1rem;
+      padding: 1rem 1rem;
+    }
+    @include respond(phone) {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 0.4rem solid $color-secondary-light;
+    border-left: 0.4rem solid $color-secondary-light;
+    transition: all 0.45s ease-in;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 0.4rem solid $color-secondary-light;
+    border-bottom: 0.4rem solid $color-secondary-light;
+    transition: all 0.45s ease-in;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+}
+.btn-secondary {
+  &:link,
+  &:visited {
+    display: inline-block;
+    position: relative;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-white;
+    background-image: linear-gradient(
+      135deg,
+      $color-primary-dark 10%,
+      $color-primary-light 100%
+    );
+    outline: none;
+    margin-left: 6rem;
+    letter-spacing: 0.4rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    @include respond(tab-land) {
+      padding: 1rem 1.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.3rem;
+      padding: 1rem 1rem;
+      margin-left: 1rem;
+    }
+    @include respond(phone) {
+      margin-left: 0;
+      font-size: 1rem;
+      display: block;
+    }
+  }
+
+  & span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    animation: line1 1s linear infinite;
+  }
+  & span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0.5rem;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    animation: line2 1s linear infinite;
+    animation-delay: 1.5s;
+  }
+  & span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0.5rem;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    animation: line3 1s linear infinite;
+  }
+
+  & span:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0.5rem;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    animation: line4 1s linear infinite;
+    animation-delay: 1.5s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-primary;
+  }
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes line2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes line4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.btn-tertiary {
+  &:link,
+  &:visited {
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+    display: inline-block;
+    font-weight: 700;
+    color: $color-grey-dark-3;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 0.4rem solid $color-primary;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-primary;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+      z-index: -1;
+    }
+    &:hover {
+      color: $color-white;
+    }
+    &:hover::after,
+    &:active::after {
+      transform-origin: top;
+      transform: scaleY(1);
+    }
+  }
+}
+.btn-tertiary-m {
+  &:link,
+  &:visited {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    display: inline-block;
+    font-weight: 700;
+    color: $color-grey-dark-3;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    border-bottom: 0.4rem solid $color-primary;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-primary;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+      z-index: -1;
+    }
+  }
+
+  &:hover::after,
+  &:active::after {
+    transform: scaleY(1);
+    transform-origin: left;
+  }
+}

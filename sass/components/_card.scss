@@ -1,0 +1,87 @@
+.card {
+  @include respond(tab-port) {
+    margin-bottom: 6rem;
+  }
+
+  &__details {
+    padding: 0 2rem 0 2rem;
+
+    background-image: linear-gradient(
+      45deg,
+      $color-primary-light 10%,
+      $color-primary-dark 100%
+    );
+    background-color: $color-primary-light;
+    background-blend-mode: soft-light;
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 40rem;
+    @include respond(tab-port) {
+      float: none;
+      width: 100%;
+    }
+  }
+  &__picture {
+    float: left;
+    width: 50%;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s;
+    @include respond(tab-port) {
+      float: none;
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-primary-dark
+      );
+      background-color: $color-primary;
+      background-blend-mode: screen;
+      opacity: 0.4;
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s ease-in;
+    }
+  }
+  &:hover &__picture--img {
+    transform: scale(1.1);
+  }
+
+  &__heading {
+    padding: 5rem 0 0 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    width: 45%;
+    text-transform: uppercase;
+    color: $color-light-white;
+
+    &-span {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      &--1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-dark, 0.4),
+          rgba($color-secondary-light, 0.4)
+        );
+      }
+    }
+  }
+}
