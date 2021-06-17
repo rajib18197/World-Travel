@@ -10,12 +10,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  // border-radius: 10% 8% 26% / 0% 0% 0% 18%;
   border-radius: 10% 7% 26% / 0% 0% 0% 15%;
   @include respond(tab-port) {
     height: 95vh;
     border-radius: 10% 9% 26% / 0% 0% 0% 13%;
-    background-position: center;
   }
   @include respond(phone) {
     border-radius: 10% 21% 26% / 0% 0% 0% 13%;
