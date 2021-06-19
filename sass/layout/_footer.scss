@@ -15,8 +15,8 @@
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
-    position: relative;
     text-align: center;
+    letter-spacing: 0.2rem;
   }
   &__social {
     text-align: center;
@@ -31,10 +31,8 @@
     height: 3rem;
     display: inline-block;
     margin-right: 2rem;
-    background-color: $color-deep;
     fill: $color-primary;
     transition: all 0.2s;
-    // transform: rotate(60deg);
 
     &:hover {
       transform: translateY(-0.5rem) scale(1.1);

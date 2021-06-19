@@ -3,17 +3,20 @@
 }
 .u-margin-bottom-large {
   margin-bottom: 2.2rem !important;
-  @include respond(tab-port) {
-    margin-bottom: 1.5rem !important;
-  }
 }
 
 .u-margin-bottom-extraLarge {
   margin-bottom: 8rem !important;
+  @include respond(phone) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-top-extraLarge {
   margin-top: 8rem;
+  @include respond(phone) {
+    margin-bottom: 5rem !important;
+  }
 }
 .u-margin-top-small {
   margin-top: 2rem;

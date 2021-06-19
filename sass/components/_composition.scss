@@ -29,9 +29,6 @@
       @include respond(phone) {
         width: 50%;
         height: 50%;
-        right: 0;
-      }
-      @include respond(phone) {
         right: 5%;
         bottom: 10%;
       }

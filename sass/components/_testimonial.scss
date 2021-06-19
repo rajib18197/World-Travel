@@ -74,7 +74,7 @@
       padding: 2rem;
     }
     @include respond(phone) {
-      padding: 1rem;
+      padding: 1.5rem;
     }
   }
   &__tittle {
@@ -82,14 +82,14 @@
     font-weight: 700;
     text-transform: uppercase;
     @include respond(phone) {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
   &__paragraph {
     font-size: 1.3rem;
     text-align: justify;
     @include respond(phone) {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
   &:hover &__content {
