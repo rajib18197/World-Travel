@@ -15,8 +15,9 @@ body {
   &--main {
     display: block;
     font-size: 4.3rem;
+    font-size: 4.5rem;
     letter-spacing: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
     text-shadow: 3px 0 0.7rem rgba($color-deep, 0.2);
     animation: moveInLeft 1s ease-in;
 
@@ -62,7 +63,7 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(
     to right,
-    $color-primary-light,
+    $color-primary-dark,
     $color-primary-dark
   );
   -webkit-background-clip: text;

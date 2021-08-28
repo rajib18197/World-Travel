@@ -11,7 +11,7 @@
       $color-primary-light 10%,
       $color-primary-dark 100%
     );
-    background-color: $color-primary-light;
+    background-color: $color-primary-dark;
     background-blend-mode: soft-light;
     float: left;
     width: 50%;
@@ -44,12 +44,14 @@
       height: 100%;
       background-image: linear-gradient(
         to right,
-        $color-primary-light,
+        $color-primary-dark,
         $color-primary-dark
       );
       background-color: $color-primary;
       background-blend-mode: screen;
-      opacity: 0.4;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
     }
     &--img {
       width: 100%;
@@ -57,6 +59,10 @@
       object-fit: cover;
       transition: all 0.4s ease-in;
     }
+  }
+  &:hover &__picture::after {
+    opacity: 0.2;
+    visibility: visible;
   }
   &:hover &__picture--img {
     transform: scale(1.1);
@@ -81,8 +87,8 @@
       &--1 {
         background-image: linear-gradient(
           to right bottom,
-          rgba($color-secondary-dark, 0.4),
-          rgba($color-secondary-light, 0.4)
+          rgba($color-secondary-light, 0.7),
+          rgba($color-secondary-light, 0.7)
         );
       }
     }

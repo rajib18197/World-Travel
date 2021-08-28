@@ -90,7 +90,7 @@
   &:visited {
     position: relative;
     display: inline-block;
-    padding: 1.5rem 4rem;
+    padding: 2rem 4rem;
     font-size: 1.4rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -126,8 +126,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 0.4rem solid $color-secondary-light;
-    border-left: 0.4rem solid $color-secondary-light;
+    border-top: 0.3rem solid $color-white;
+    border-left: 0.3rem solid $color-white;
     transition: all 0.45s ease-in;
   }
 
@@ -139,8 +139,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    border-right: 0.4rem solid $color-secondary-light;
-    border-bottom: 0.4rem solid $color-secondary-light;
+    border-right: 0.3rem solid $color-white;
+    border-bottom: 0.3rem solid $color-white;
     transition: all 0.45s ease-in;
   }
 
@@ -155,7 +155,7 @@
   &:visited {
     display: inline-block;
     position: relative;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -164,7 +164,7 @@
     background-image: linear-gradient(
       135deg,
       $color-primary-dark 10%,
-      $color-primary-light 100%
+      $color-primary-dark 100%
     );
     outline: none;
     margin-left: 6rem;
@@ -191,13 +191,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 0.5rem;
+    height: 0.3rem;
     width: 100%;
-    background-image: linear-gradient(
-      to right,
-      $color-secondary-light,
-      $color-secondary-dark
-    );
+    background-image: linear-gradient(to right, $color-white, $color-white);
     animation: line1 1s linear infinite;
   }
   & span:nth-child(2) {
@@ -205,12 +201,8 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 0.5rem;
-    background-image: linear-gradient(
-      to right,
-      $color-secondary-light,
-      $color-secondary-dark
-    );
+    width: 0.3rem;
+    background-image: linear-gradient(to right, $color-white, $color-white);
     animation: line2 1s linear infinite;
     animation-delay: 1.5s;
   }
@@ -218,13 +210,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 0.5rem;
+    height: 0.3rem;
     width: 100%;
-    background-image: linear-gradient(
-      to right,
-      $color-secondary-light,
-      $color-secondary-dark
-    );
+    background-image: linear-gradient(to right, $color-white, $color-white);
     animation: line3 1s linear infinite;
   }
 
@@ -233,12 +221,8 @@
     bottom: 0;
     left: 0;
     height: 100%;
-    width: 0.5rem;
-    background-image: linear-gradient(
-      to right,
-      $color-secondary-light,
-      $color-secondary-dark
-    );
+    width: 0.3rem;
+    background-image: linear-gradient(to right, $color-white, $color-white);
     animation: line4 1s linear infinite;
     animation-delay: 1.5s;
   }
@@ -246,6 +230,9 @@
   &:hover,
   &:active {
     background-color: $color-primary;
+  }
+  &:hover span {
+    animation: none;
   }
 }
 
