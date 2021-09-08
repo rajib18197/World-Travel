@@ -18,7 +18,7 @@
   }
   &:hover,
   &:active {
-    transform: translateY(-1.8rem) scale(1.1);
+    transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 1.5rem 4rem rgba($color-deep, 0.2);
     color: $color-deep;
     @include respond(phone) {

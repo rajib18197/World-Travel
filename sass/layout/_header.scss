@@ -1,24 +1,19 @@
 .header {
   position: relative;
   height: 95vh;
-  margin: 2rem;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-dark, 0.8),
-      rgba($color-primary-dark, 0.8)
+      rgba($color-primary, 0.7),
+      rgba($color-primary-light, 0.7)
     ),
-    url(../img/snow.jpg);
+    url(../img/bg20.jpg);
   background-size: cover;
   background-position: bottom;
   // background-attachment: fixed;
-  // border-radius: 10% 7% 26% / 0% 0% 0% 15%;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  @include respond(tab-port) {
-    height: 95vh;
-    border-radius: 10% 9% 26% / 0% 0% 0% 13%;
-  }
+
   @include respond(phone) {
-    border-radius: 10% 21% 26% / 0% 0% 0% 13%;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 
   &__content {

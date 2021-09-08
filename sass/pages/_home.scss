@@ -11,6 +11,9 @@
     padding: 10rem 0;
   }
 }
+.section-popular-tours {
+  padding: 20rem 0;
+}
 #section-services {
   background-image: linear-gradient(
       to right,
@@ -85,10 +88,22 @@
     }
   }
 }
-#section-testimonials {
+#section-experience {
   position: relative;
   padding: 15rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-dark, 0.9),
+      rgba($color-primary-dark, 0.9)
+    ),
+    url(../img/nature1.jpg);
+  background-size: cover;
+  background-position: center;
   @include respond(tab-port) {
     padding: 10rem 0;
   }
+}
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
 }

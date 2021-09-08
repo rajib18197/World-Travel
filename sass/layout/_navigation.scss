@@ -1,24 +1,14 @@
 .navigation {
   background-color: $color-primary-dark;
   text-align: center;
-  // overflow: hidden;
-  &__checkbox {
-    display: none;
-  }
-  &__button {
-    display: none;
-  }
-  &__background {
-    display: none;
-  }
-
   &__checkbox {
     display: none;
   }
   &__button {
     display: block;
     width: 5.5rem;
-    height: 5rem;
+    height: 5.3rem;
+    border-radius: 0.1rem;
     position: fixed;
     top: 4rem;
     right: 4rem;
@@ -63,14 +53,12 @@
       transition: all 0.45s;
     }
     &::before {
-      width: 1.5rem;
-      top: -0.8rem;
+      top: -1rem;
       left: 0;
     }
     &::after {
-      width: 1.5rem;
       right: 0;
-      top: 0.8rem;
+      top: 1rem;
     }
   }
   &__checkbox:checked ~ &__background {

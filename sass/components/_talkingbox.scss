@@ -8,8 +8,8 @@
     border-radius: 50%;
     background-image: linear-gradient(
       to right,
-      $color-secondary-dark,
-      $color-secondary-light
+      $color-primary-dark,
+      $color-primary-dark
     );
     position: fixed;
     right: 2rem;
@@ -19,11 +19,11 @@
     &-icon {
       height: 4rem;
       width: 4rem;
+      fill: $color-primary-dark;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      fill: $color-tertiary-light;
     }
   }
 

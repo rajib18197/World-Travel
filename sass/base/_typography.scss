@@ -16,44 +16,53 @@ body {
     display: block;
     font-size: 4.3rem;
     font-size: 4.5rem;
+    font-size: 6rem;
     letter-spacing: 1.1rem;
+    letter-spacing: 3.5rem;
     font-weight: 500;
     text-shadow: 3px 0 0.7rem rgba($color-deep, 0.2);
     animation: moveInLeft 1s ease-in;
 
-    @include respond(tab-land) {
-      letter-spacing: 0.4rem;
-    }
-    @include respond(tab-port) {
-      font-size: 3.5rem;
-      letter-spacing: 0.2rem;
-    }
+    // @include respond(tab-land) {
+    //   letter-spacing: 0.4rem;
+    // }
+    // @include respond(tab-port) {
+    //   font-size: 3.5rem;
+    //   letter-spacing: 0.2rem;
+    // }
     @include respond(phone) {
-      font-size: 2.5rem;
+      font-size: 5rem;
+      letter-spacing: 1.1rem;
     }
   }
   &--sub {
     display: block;
     font-size: 1.7rem;
+    font-size: 2rem;
     letter-spacing: 1.1rem;
+    letter-spacing: 1.8rem;
     font-weight: 700;
     text-shadow: 3px 0 7px rgba($color-deep, 0.2),
       -3px 0 7px rgba($color-deep, 0.2);
     animation: moveInRight 1s ease-in;
 
-    @include respond(tab-land) {
-      letter-spacing: 0.75rem;
-    }
-    @include respond(tab-port) {
-      font-size: 1.4rem;
-      letter-spacing: 0.48rem;
-    }
+    // @include respond(tab-land) {
+    //   letter-spacing: 0.75rem;
+    // }
+    // @include respond(tab-port) {
+    //   font-size: 1.4rem;
+    //   letter-spacing: 0.48rem;
+    // }
     @include respond(phone) {
-      letter-spacing: 0.15rem;
+      letter-spacing: 0.6rem;
     }
   }
 }
-
+.heading-10 {
+  text-transform: uppercase;
+  font-size: $default-font-size;
+  font-weight: 700;
+}
 .heading-secondary {
   font-size: 3rem;
   padding: 1rem 0;
@@ -82,13 +91,6 @@ body {
     width: 35%;
     height: 0.4rem;
     background-color: $color-primary-dark;
-  }
-  &:hover::after {
-    opacity: 0;
-  }
-  &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
 }
 

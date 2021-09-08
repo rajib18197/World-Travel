@@ -90,7 +90,7 @@
   &:visited {
     position: relative;
     display: inline-block;
-    padding: 2rem 4rem;
+    padding: 1.8rem 2rem;
     font-size: 1.4rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -126,8 +126,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 0.3rem solid $color-white;
-    border-left: 0.3rem solid $color-white;
+    border-top: 0.3rem solid $color-grey-dark-4;
+    border-left: 0.3rem solid $color-grey-dark-4;
     transition: all 0.45s ease-in;
   }
 
@@ -139,8 +139,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    border-right: 0.3rem solid $color-white;
-    border-bottom: 0.3rem solid $color-white;
+    border-right: 0.3rem solid $color-grey-dark-4;
+    border-bottom: 0.3rem solid $color-grey-dark-4;
     transition: all 0.45s ease-in;
   }
 
@@ -155,22 +155,19 @@
   &:visited {
     display: inline-block;
     position: relative;
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: $color-white;
-    background-image: linear-gradient(
-      135deg,
-      $color-primary-dark 10%,
-      $color-primary-dark 100%
-    );
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #777;
+    background-color: #fff;
     outline: none;
-    margin-left: 6rem;
-    letter-spacing: 0.4rem;
+    margin-left: 4rem;
+    letter-spacing: 0.03rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    transition: all 0.3s;
     @include respond(tab-land) {
       padding: 1rem 1.5rem;
     }
@@ -193,7 +190,11 @@
     left: 0;
     height: 0.3rem;
     width: 100%;
-    background-image: linear-gradient(to right, $color-white, $color-white);
+    background-image: linear-gradient(
+      to right,
+      $color-grey-dark-4,
+      $color-grey-dark-4
+    );
     animation: line1 1s linear infinite;
   }
   & span:nth-child(2) {
@@ -202,7 +203,11 @@
     right: 0;
     height: 100%;
     width: 0.3rem;
-    background-image: linear-gradient(to right, $color-white, $color-white);
+    background-image: linear-gradient(
+      to right,
+      $color-grey-dark-4,
+      $color-grey-dark-4
+    );
     animation: line2 1s linear infinite;
     animation-delay: 1.5s;
   }
@@ -212,7 +217,11 @@
     bottom: 0;
     height: 0.3rem;
     width: 100%;
-    background-image: linear-gradient(to right, $color-white, $color-white);
+    background-image: linear-gradient(
+      to right,
+      $color-grey-dark-4,
+      $color-grey-dark-4
+    );
     animation: line3 1s linear infinite;
   }
 
@@ -222,14 +231,19 @@
     left: 0;
     height: 100%;
     width: 0.3rem;
-    background-image: linear-gradient(to right, $color-white, $color-white);
+    background-image: linear-gradient(
+      to right,
+      $color-grey-dark-4,
+      $color-grey-dark-4
+    );
     animation: line4 1s linear infinite;
     animation-delay: 1.5s;
   }
 
   &:hover,
   &:active {
-    background-color: $color-primary;
+    background-color: $color-grey-dark-4;
+    color: #fff;
   }
   &:hover span {
     animation: none;

@@ -1,4 +1,4 @@
-.testimonials-card {
+.experience {
   padding: 4rem;
   position: relative;
   &__photo {
@@ -22,7 +22,7 @@
     text-transform: uppercase;
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: $color-light-white;
     opacity: 0;
@@ -34,7 +34,7 @@
   }
   &__heading {
     padding: 5rem 0 0 0;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     width: 45%;
     text-transform: uppercase;
