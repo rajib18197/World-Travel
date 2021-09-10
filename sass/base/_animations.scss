@@ -1,3 +1,19 @@
+/***************************
+ Animate Navigation Section
+***************************/
+@keyframes navigation-rotate {
+  0% {
+    transform: translateX(-150rem) rotate(1800deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+/*************************************************
+ Animate Header section [Heading-Primary-main]
+*************************************************/
 @keyframes moveInLeft {
   0% {
     transform: translateX(-10rem);
@@ -12,6 +28,9 @@
     opacity: 1;
   }
 }
+/*********************************************
+ Animate Header section [Heading-Primary-sub]
+*********************************************/
 @keyframes moveInRight {
   0% {
     transform: translateX(10rem);
@@ -26,6 +45,9 @@
     opacity: 1;
   }
 }
+/***************************
+ Animate Header section [Button]
+***************************/
 @keyframes moveInBottom {
   0% {
     transform: translateY(3rem);

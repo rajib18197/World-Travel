@@ -12,7 +12,7 @@
     position: fixed;
     top: 4rem;
     right: 4rem;
-    background-color: $color-white;
+    background-color: $color-secondary-dark;
     box-shadow: 0 1rem 1.5rem rgba($color-deep, 0.2);
     cursor: pointer;
     z-index: 2000;
@@ -135,15 +135,5 @@
       display: inline-block;
       margin-right: 1rem;
     }
-  }
-}
-@keyframes navigation-rotate {
-  0% {
-    transform: translateX(-150rem) rotate(1800deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) rotate(0);
-    opacity: 1;
   }
 }
