@@ -15,18 +15,19 @@
   padding: 20rem 0;
 }
 #section-services {
+  // margin-top: 10rem;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-dark, 0.6),
-      rgba($color-primary-dark, 0.6)
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary-dark, 0.8)
     ),
-    url(../img/nature1.jpg);
+    url(../img/bg30.jpg);
   background-size: cover;
   background-position: center;
-  padding: 10rem 0;
-  transform: skewY(-4deg);
+  padding: 15rem 0;
+  transform: skewY(-7deg);
   & > * {
-    transform: skewY(4deg);
+    transform: skewY(7deg);
   }
   @include respond(tab-port) {
     padding: 5rem 0;
@@ -48,7 +49,7 @@
       rgba($color-light-white, 0.9) 70%,
       transparent 70%
     ),
-    url(../img/city.jpg);
+    url(../img/bg55.jpg);
   background-size: 100%;
   background-position: center;
   box-shadow: 0 2rem 4rem rgba($color-deep, 0.2);

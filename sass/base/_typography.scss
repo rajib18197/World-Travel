@@ -14,47 +14,28 @@ body {
   }
   &--main {
     display: block;
-    font-size: 4.3rem;
-    font-size: 4.5rem;
     font-size: 6rem;
-    letter-spacing: 1.1rem;
     letter-spacing: 3.5rem;
     font-weight: 500;
     text-shadow: 3px 0 0.7rem rgba($color-deep, 0.2);
     animation: moveInLeft 1s ease-in;
 
-    // @include respond(tab-land) {
-    //   letter-spacing: 0.4rem;
-    // }
-    // @include respond(tab-port) {
-    //   font-size: 3.5rem;
-    //   letter-spacing: 0.2rem;
-    // }
     @include respond(phone) {
-      font-size: 5rem;
-      letter-spacing: 1.1rem;
+      font-size: 4.5rem;
     }
   }
   &--sub {
     display: block;
     font-size: 1.7rem;
     font-size: 2rem;
-    letter-spacing: 1.1rem;
     letter-spacing: 1.8rem;
     font-weight: 700;
     text-shadow: 3px 0 7px rgba($color-deep, 0.2),
       -3px 0 7px rgba($color-deep, 0.2);
     animation: moveInRight 1s ease-in;
 
-    // @include respond(tab-land) {
-    //   letter-spacing: 0.75rem;
-    // }
-    // @include respond(tab-port) {
-    //   font-size: 1.4rem;
-    //   letter-spacing: 0.48rem;
-    // }
     @include respond(phone) {
-      letter-spacing: 0.6rem;
+      letter-spacing: 1.34rem;
     }
   }
 }
