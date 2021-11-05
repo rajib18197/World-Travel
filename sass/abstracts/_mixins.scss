@@ -1,27 +1,26 @@
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
 @mixin respond($breakpoints) {
-  // 450px
+  // 480px
   @if $breakpoints == small-phone {
-    @media only screen and (max-width: 28.12em) {
+    @media only screen and (max-width: 30em) {
       @content;
     }
   }
-  // 600px
+  // 610px
   @if $breakpoints == phone {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 38.75em) {
       @content;
     }
   }
-  // 900px
+
+  // 910px
   @if $breakpoints == tab-port {
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 56.87em) {
+      @content;
+    }
+  }
+  //1100px
+  @if $breakpoints == tab-land-small {
+    @media only screen and (max-width: 68.75em) {
       @content;
     }
   }
@@ -31,6 +30,7 @@
       @content;
     }
   }
+  //1792px
   @if $breakpoints == large-desktop {
     @media only screen and (min-width: 112em) {
       @content;

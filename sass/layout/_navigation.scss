@@ -26,8 +26,8 @@
     top: 4rem;
     right: 4rem;
     background-image: radial-gradient(
-      rgba($color-primary-dark, 0.9),
-      rgba($color-primary-dark, 0.9)
+      rgba($color-primary-dark, 0.98),
+      rgba($color-primary-dark, 0.98)
     );
     box-shadow: 0 1rem 2rem rgba($color-deep, 0.2);
     z-index: 1000;
@@ -108,7 +108,7 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 2.7rem;
+      font-size: 2.4rem;
       padding: 1rem 2rem;
       font-weight: 400;
       text-decoration: none;
@@ -129,7 +129,7 @@
     &:active {
       color: $color-primary;
       background-position: 100%;
-      transform: translateX(1.5rem) scale(1.03);
+      transform: translateX(1.5rem);
     }
     span {
       display: inline-block;

@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <!--+-+-+-+-+-+-+-- Message Box +-+-+-+-+-+-+-+-->
+    <!--+-+-+-+-+-+-+-- Message Box +-+-+-+-+-+-++-+-+-->
     <div class="talking">
       <input
         type="checkbox"
@@ -40,6 +40,9 @@
             alt=""
             class="talking__img u-margin-bottom-large"
           />
+          <h3 class="talking__heading u-margin-bottom-large">
+            Hello! How Can We Help You?
+          </h3>
           <p class="talking__box--paragraph talking__box--paragraph-1">
             Chat With Travelling World
           </p>
@@ -51,15 +54,12 @@
           >
             Typically replies Within Two Hour
           </p>
-          <h3 class="talking__heading u-margin-bottom-large">
-            Hello! How Can We Help You?
-          </h3>
           <a href="#" class="btn-talk btn--green">Continue With Messenger</a>
         </div>
       </div>
     </div>
 
-    <!--+-+-+-+-+-+-+-- Navigation +-+-+-+-+-+-+-+-->
+    <!--+-+-+-+-+-+-+-- Navigation +-+-+-+-+-+-+-+-+-+-->
     <div class="navigation">
       <input
         type="checkbox"
@@ -112,8 +112,8 @@
       <!-- Header Content Box -->
       <div class="header__content">
         <h1 class="heading-primary">
-          <span class="heading-primary--main">Outdoors</span>
-          <span class="heading-primary--sub">IS WHERE LIFE HAPPENS</span>
+          <span class="heading-primary__main">Outdoors</span>
+          <span class="heading-primary__sub">IS WHERE LIFE HAPPENS</span>
         </h1>
         <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
       </div>
@@ -131,7 +131,7 @@
         <!-- content start -->
         <div class="row">
           <!-- picture -->
-          <div class="col-1-of-2">
+          <div class="grid grid--gap grid--2-cols">
             <div class="composition">
               <img
                 src="img/bg50.jpg"
@@ -144,9 +144,9 @@
                 class="composition__photo composition__photo--2"
               />
             </div>
-          </div>
-          <!-- About us -->
-          <div class="col-1-of-2">
+
+            <!-- About us -->
+
             <div class="about">
               <h3
                 class="
@@ -174,68 +174,65 @@
           </div>
         </div>
       </section>
-      <!--+-+-+-+-+-+-+-- Services Section +-+-+-+-+-+-+-+-->
+      <!--+-+-+-+-+-+-+-- Services Section +-+-+-+-+-++-->
       <section id="section-services">
         <!-- row-1 -->
-        <div class="row u-margin-bottom-extraLarge">
+        <!-- <div class="row u-margin-bottom-extraLarge"> -->
+        <div class="row u-margin-bottom-extraLarge grid grid--gap grid--3-cols">
           <!-- services-box-1 -->
-          <div class="col-1-of-3">
-            <div class="services-box">
-              <svg class="services-box__icon u-margin-bottom-small">
-                <use xlink:href="img/sprite.svg#icon-global"></use>
-              </svg>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Explore The world
-              </h3>
-              <p class="services-box__paragraph u-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-                dignissimos facere architecto facilis. Lorem ipsum dolor sit
-                amet Lorem ipsum facilis .
-              </p>
-            </div>
+          <div class="services-box">
+            <svg class="services-box__icon u-margin-bottom-small">
+              <use xlink:href="img/sprite.svg#icon-global"></use>
+            </svg>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Explore The world
+            </h3>
+            <p class="services-box__paragraph u-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+              dignissimos facere architecto facilis. Lorem ipsum dolor sit amet
+              Lorem ipsum facilis .
+            </p>
           </div>
+
           <!-- services-box-2 -->
-          <div class="col-1-of-3">
-            <div class="services-box">
-              <svg class="services-box__icon u-margin-bottom-small">
-                <use xlink:href="img/sprite.svg#icon-compass2"></use>
-              </svg>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Meet Nature
-              </h3>
-              <p class="services-box__paragraph u-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-                dignissimos facere architecto facilis. Lorem ipsum dolor sit
-                amet Lorem ipsum facilis .
-              </p>
-            </div>
+
+          <div class="services-box">
+            <svg class="services-box__icon u-margin-bottom-small">
+              <use xlink:href="img/sprite.svg#icon-compass2"></use>
+            </svg>
+            <h3 class="heading-tertiary u-margin-bottom-small">Meet Nature</h3>
+            <p class="services-box__paragraph u-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+              dignissimos facere architecto facilis. Lorem ipsum dolor sit amet
+              Lorem ipsum facilis .
+            </p>
           </div>
+
           <!-- services-box-3 -->
-          <div class="col-1-of-3">
-            <div class="services-box">
-              <svg class="services-box__icon u-margin-bottom-small">
-                <use xlink:href="img/sprite.svg#icon-map"></use>
-              </svg>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Find Your Way of Happiness
-              </h3>
-              <p class="services-box__paragraph u-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-                dignissimos facere architecto facilis. Lorem ipsum dolor sit
-                amet Lorem ipsum facilis .
-              </p>
-            </div>
+          <div class="services-box">
+            <svg class="services-box__icon u-margin-bottom-small">
+              <use xlink:href="img/sprite.svg#icon-map"></use>
+            </svg>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Find Your Way of Happiness
+            </h3>
+            <p class="services-box__paragraph u-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+              dignissimos facere architecto facilis. Lorem ipsum dolor sit amet
+              Lorem ipsum facilis .
+            </p>
           </div>
         </div>
+        <!-- </div> -->
       </section>
-      <!--+-+-+-+-+-+-+-- Places of Tours +-+-+-+-+-+-+-+-->
+      <!--+-+-+-+-+-+-+-- Places of Tours +-+-+-+-+-+-+-->
       <section id="section-tours">
         <!-- Heading secondary for All section title -->
         <div class="u-center-text u-margin-bottom-extraLarge">
           <h2 class="heading-secondary">Our Tours For Adventurous People</h2>
         </div>
         <!-- row-1 -->
-        <div class="row">
+        <div class="row grid grid--2-cols">
           <!-- tour-place-1 -->
           <div class="tour">
             <div class="tour__details">
@@ -257,9 +254,7 @@
               <img src="img/bg10.jpg" alt="" class="tour__picture--img" />
             </div>
           </div>
-        </div>
-        <!-- row-2 -->
-        <div class="row">
+
           <!-- tour-place-2 -->
           <div class="tour">
             <div class="tour__picture">
@@ -280,9 +275,7 @@
               <a href="#" class="btn-text btn--animated">Explore Full View</a>
             </div>
           </div>
-        </div>
-        <!-- row-3 -->
-        <div class="row">
+
           <!-- tour place-3 -->
           <div class="tour">
             <div class="tour__details">
@@ -304,9 +297,7 @@
               <img src="img/bg2.jpg" alt="" class="tour__picture--img" />
             </div>
           </div>
-        </div>
-        <!-- row-4 -->
-        <div class="row">
+
           <!-- tour-place-4 -->
           <div class="tour">
             <div class="tour__picture">
@@ -328,6 +319,7 @@
             </div>
           </div>
         </div>
+
         <!-- button -->
         <div class="u-center-text u-margin-top-extraLarge">
           <a href="#" class="btn-secondary">
@@ -348,7 +340,7 @@
         <!-- content start -->
         <div class="row">
           <!-- card-1 -->
-          <div class="col-1-of-3">
+          <div class="grid grid--gap grid--3-cols">
             <div class="card">
               <div class="card__side card__side--forepart">
                 <div class="card__image card__image--1">&nbsp;</div>
@@ -379,9 +371,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- card-2 -->
-          <div class="col-1-of-3">
+            <!-- card-2 -->
             <div class="card">
               <div class="card__side card__side--forepart">
                 <div class="card__image card__image--2">&nbsp;</div>
@@ -412,9 +402,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- card-3 -->
-          <div class="col-1-of-3">
+            <!-- card-3 -->
             <div class="card">
               <div class="card__side card__side--forepart">
                 <div class="card__image card__image--3">&nbsp;</div>
@@ -458,18 +446,18 @@
           </a>
         </div>
       </section>
-      <!--+-+-+-+-+-+-+-- Experience Section +-+-+-+-+-+-+-+-->
+      <!--+-+-+-+-+-+-+-- Experience Section +-+-+-+-+-+-->
       <section id="section-experience">
         <!-- Heading secondary for All section title -->
         <div class="u-center-text u-margin-bottom-extraLarge">
           <h2 class="heading-secondary text-color">
-            With Our Experience We will serve you
+            With Our Experience We will Help you
           </h2>
         </div>
         <!-- row-1 -->
         <div class="row">
           <!-- experience-1 -->
-          <div class="col-1-of-2">
+          <div class="grid grid--gap grid--cols">
             <div class="experience">
               <figure class="experience__photo">
                 <img src="img/bg4.jpg" alt="" class="experience__img" />
@@ -496,9 +484,7 @@
                 </p>
               </div>
             </div>
-          </div>
-          <!-- experience-2 -->
-          <div class="col-1-of-2">
+            <!-- experience-2 -->
             <div class="experience">
               <figure class="experience__photo">
                 <img src="img/img-4.jpg" alt="" class="experience__img" />
@@ -524,12 +510,8 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- row-2 -->
-        <div class="row">
-          <!-- experience-3 -->
-          <div class="col-1-of-2">
+            <!-- row-2 -->
+            <!-- experience-3 -->
             <div class="experience">
               <figure class="experience__photo">
                 <img src="img/pic1.jpg" alt="" class="experience__img" />
@@ -555,9 +537,7 @@
                 </p>
               </div>
             </div>
-          </div>
-          <!-- experience-4 -->
-          <div class="col-1-of-2">
+            <!-- experience-4 -->
             <div class="experience">
               <figure class="experience__photo">
                 <img src="img/about2.jpg" alt="" class="experience__img" />
@@ -586,7 +566,7 @@
           </div>
         </div>
       </section>
-      <!--+-+-+-+-+-+-+-- Testimonials Section +-+-+-+-+-+-+-+-->
+      <!--+-+-+-+-+-+-+-- Testimonials Section +-+-+-+-+-->
       <section class="section-stories">
         <!-- background-video -->
         <div class="bg-video">
@@ -659,7 +639,7 @@
           </a>
         </div>
       </section>
-      <!--+-+-+-+-+-+-+-- Booking Section +-+-+-+-+-+-+-+-->
+      <!--+-+-+-+-+-+-+-- Booking Section +-+-+-+-+-+--+-->
       <section id="section-book">
         <div class="row">
           <div class="book">
@@ -725,39 +705,39 @@
         </div>
       </section>
     </main>
-    <!--+-+-+-+-+-+-+-- Footer Section +-+-+-+-+-+-+-+-->
+    <!--+-+-+-+-+-+-+-- Footer Section +-+-+-+-+-+-+---+-->
     <footer class="footer">
       <div class="footer__text u-margin-bottom-large">Connect With Us</div>
       <!-- social-Icon -->
       <div class="footer__social">
-        <a href="#">
+        <a href="#" class="footer__icons">
           <svg class="footer__icon">
             <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
           </svg>
         </a>
-        <a href="#">
+        <a href="#" class="footer__icons">
           <svg class="footer__icon">
             <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
           </svg>
         </a>
-        <a href="#">
+        <a href="#" class="footer__icons">
           <svg class="footer__icon">
             <use xlink:href="img/sprite.svg#icon-skype-with-circle"></use>
           </svg>
         </a>
-        <a href="#"
+        <a href="#" class="footer__icons"
           ><svg class="footer__icon">
             <use xlink:href="img/sprite.svg#icon-linkedin-with-circle"></use>
           </svg>
         </a>
 
-        <a href="#"
+        <a href="#" class="footer__icons"
           ><svg class="footer__icon">
             <use xlink:href="img/sprite.svg#icon-github"></use>
           </svg>
         </a>
       </div>
-      <div class="row">
+      <div class="row grid grid--2-cols">
         <!-- footer Navigation -->
         <div class="col-1-of-2">
           <div class="footer__navigation">
@@ -793,56 +773,5 @@
         </div>
       </div>
     </footer>
-
-    <!--+-+-+-+-+-+-+-- Fluid layouts created by Float properties +-+-+-+-+-+-+-+-->
-    <!-- <section class="grid-test">
-        <div class="row">
-            <div class="col-1-of-2">col-1-of-2</div>
-            <div class="col-1-of-2">col-1-of-2</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">col-1-of-3</div>
-            <div class="col-1-of-3">col-1-of-3</div>
-            <div class="col-1-of-3">col-1-of-3</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">col-1-of-3</div>
-            <div class="col-2-of-3">col-2-of-3</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-2-of-4">col-2-of-4</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-3-of-4">col-3-of-4</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-5">col-1-of-5</div>
-            <div class="col-1-of-5">col-1-of-5</div>
-            <div class="col-1-of-5">col-1-of-5</div>
-            <div class="col-1-of-5">col-1-of-5</div>
-            <div class="col-1-of-5">col-1-of-5</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-5">col-1-of-5</div>
-            <div class="col-2-of-5">col-2-of-5</div>
-            <div class="col-2-of-5">col-2-of-5</div>
-        </div>
-    </section> -->
   </body>
 </html>

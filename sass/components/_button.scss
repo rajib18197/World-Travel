@@ -11,6 +11,10 @@
     font-weight: 600;
     position: relative;
     transition: all 0.6s;
+    @include respond(small-phone) {
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+    }
   }
   &:hover {
     box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
@@ -106,8 +110,6 @@
     }
     @include respond(tab-port) {
       letter-spacing: 0.1rem;
-      font-size: 1.1rem;
-      padding: 1rem 1rem;
     }
     @include respond(phone) {
       font-size: 1.4rem;
@@ -125,8 +127,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 0.3rem solid $color-grey-dark-4;
-    border-left: 0.3rem solid $color-grey-dark-4;
+    border-top: 0.3rem solid $color-secondary-dark;
+    border-left: 0.3rem solid $color-secondary-dark;
     transition: all 0.45s ease-in;
   }
 
@@ -138,8 +140,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    border-right: 0.3rem solid $color-grey-dark-4;
-    border-bottom: 0.3rem solid $color-grey-dark-4;
+    border-right: 0.3rem solid $color-secondary-dark;
+    border-bottom: 0.3rem solid $color-secondary-dark;
     transition: all 0.45s ease-in;
   }
 
@@ -179,7 +181,6 @@
       margin-left: 0;
       font-size: 1.4rem;
       padding: 1.5rem;
-      // display: block;
     }
   }
 
@@ -191,8 +192,8 @@
     width: 100%;
     background-image: linear-gradient(
       to right,
-      $color-grey-dark-4,
-      $color-grey-dark-4
+      $color-secondary-dark,
+      $color-secondary-dark
     );
     animation: line1 1s linear infinite;
   }
@@ -204,8 +205,8 @@
     width: 0.3rem;
     background-image: linear-gradient(
       to right,
-      $color-grey-dark-4,
-      $color-grey-dark-4
+      $color-secondary-dark,
+      $color-secondary-dark
     );
     animation: line2 1s linear infinite;
     animation-delay: 1.5s;
@@ -218,8 +219,8 @@
     width: 100%;
     background-image: linear-gradient(
       to right,
-      $color-grey-dark-4,
-      $color-grey-dark-4
+      $color-secondary-dark,
+      $color-secondary-dark
     );
     animation: line3 1s linear infinite;
   }
@@ -232,8 +233,8 @@
     width: 0.3rem;
     background-image: linear-gradient(
       to right,
-      $color-grey-dark-4,
-      $color-grey-dark-4
+      $color-secondary-dark,
+      $color-secondary-dark
     );
     animation: line4 1s linear infinite;
     animation-delay: 1.5s;
@@ -241,47 +242,11 @@
 
   &:hover,
   &:active {
-    background-color: $color-grey-dark-4;
+    background-color: $color-secondary-dark;
     color: #fff;
   }
   &:hover span {
     animation: none;
-  }
-}
-
-@keyframes line1 {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes line2 {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
-
-@keyframes line3 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes line4 {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
   }
 }
 

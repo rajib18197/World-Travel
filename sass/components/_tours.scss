@@ -1,10 +1,4 @@
 .tour {
-  //**************** Responsiveness Start *******************//
-  // (max-width) 900px ==> 56.25em
-  @include respond(tab-port) {
-    margin-bottom: 4rem;
-  }
-
   &__details {
     padding: 0 2rem 0 2rem;
 
@@ -15,8 +9,6 @@
     );
     background-color: $color-primary-dark;
     background-blend-mode: soft-light;
-    float: left;
-    width: 50%;
     position: relative;
     height: 40rem;
     //**************** Responsiveness Start *******************//
@@ -27,8 +19,6 @@
     }
   }
   &__picture {
-    float: left;
-    width: 50%;
     height: 40rem;
     overflow: hidden;
     position: relative;
@@ -102,8 +92,14 @@
     }
     //**************** Responsiveness Start *******************//
     // (max-width) 600px ==> 37.5em
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+    }
     @include respond(phone) {
       font-size: 2.5rem;
+    }
+    @include respond(small-phone) {
+      font-size: 2rem;
     }
   }
 }

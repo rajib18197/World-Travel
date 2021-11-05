@@ -1,60 +1,37 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-
-  &:not(:last-child) {
-    @include respond(tab-port) {
-      margin-bottom: $gap-vertical-small;
-    }
-  }
   @include respond(tab-port) {
-    max-width: 50rem;
-    padding: 0 2rem;
+    max-width: 60rem;
   }
+  @include respond(phone) {
+    padding: 0.4rem;
+  }
+}
+.grid {
+  display: grid;
 
-  @include clearfix;
-
-  [class^="col-"] {
-    float: left;
-
-    &:not(:last-child) {
-      margin-right: $gap-horizontal;
-
-      @include respond(tab-port) {
-        margin-right: 0;
-        margin-bottom: $gap-vertical-small;
-      }
-    }
-
+  &--gap {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
     @include respond(tab-port) {
-      width: 100% !important;
+      grid-template-columns: 1fr;
     }
   }
-
-  .col-1-of-2 {
-    width: calc((100% - #{$gap-horizontal}) / 2);
+  &--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+    }
   }
-  .col-1-of-3 {
-    width: calc((100% - 2 * #{$gap-horizontal}) / 3);
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * #{$gap-horizontal}) / 3) + #{$gap-horizontal});
-  }
-  .col-1-of-4 {
-    width: calc((100% - 3 * #{$gap-horizontal}) / 4);
-  }
-  .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * #{$gap-horizontal}) / 4) + #{$gap-horizontal});
-  }
-  .col-3-of-4 {
-    width: calc(
-      3 * ((100% - 3 * #{$gap-horizontal}) / 4) + (2 * #{$gap-horizontal})
-    );
-  }
-  .col-1-of-5 {
-    width: calc((100% - 4 * #{$gap-horizontal}) / 5);
-  }
-  .col-2-of-5 {
-    width: calc(2 * ((100% - 4 * #{$gap-horizontal}) / 5) + #{$gap-horizontal});
+  &--cols {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }

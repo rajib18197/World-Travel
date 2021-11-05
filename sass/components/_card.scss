@@ -69,28 +69,25 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-dark,
-          $color-secondary-dark
-        ),
-        url(../img/sea.jpg);
+      background: linear-gradient(45deg, #000 10%, transparent),
+        linear-gradient(#730099, #730099), url(../img/sea.jpg);
+      background-size: cover;
+      //background-position: center;
+      background-blend-mode: overlay;
     }
     &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-dark,
-          $color-primary-dark
-        ),
-        url(../img/nature1.jpg);
+      background: linear-gradient(45deg, #000 10%, transparent),
+        linear-gradient(#3754c7, #3754c7), url(../img/nature1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
     }
     &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-dark,
-          $color-tertiary-dark
-        ),
-        url(../img/snow.jpg);
+      background: linear-gradient(45deg, #000 10%, transparent),
+        linear-gradient(#11a303, #11a303), url(../img/snow.jpg);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
     }
   }
 

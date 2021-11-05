@@ -12,17 +12,33 @@
     border-radius: 13% 0% 20% 21% / 11% 15% 0% 0%;
   }
   &__text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    color: $color-secondary-light;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.2rem;
   }
   &__social {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
     margin-bottom: 8rem;
     @include respond(tab-port) {
       margin-bottom: 6rem;
+    }
+  }
+  &__icons {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: $color-primary-dark;
+    padding: 1rem;
+    transform: rotate(221deg);
+    line-height: 1;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1) rotate(0);
     }
   }
   &__icon {
@@ -31,11 +47,11 @@
     height: 3rem;
     display: inline-block;
     margin-right: 2rem;
-    fill: $color-primary;
-    transition: all 0.2s;
-
+    fill: $color-white;
+    transition: all 0.3s;
+    transform: rotate(-221deg);
     &:hover {
-      transform: translateY(-0.5rem) scale(1.1);
+      transform: rotate(0);
     }
   }
 
@@ -72,7 +88,7 @@
 
     &:hover,
     &:active {
-      color: $color-primary;
+      color: $color-secondary-light;
       box-shadow: 0 1rem 2rem rgba($color-deep, 0.4);
       transform: rotate(5deg) scale(1.3);
     }

@@ -8,8 +8,8 @@
     border-radius: 50%;
     background-image: linear-gradient(
       to right,
-      $color-primary-dark,
-      $color-primary-dark
+      $color-grey-dark-4,
+      $color-grey-dark-4
     );
     position: fixed;
     right: 2rem;
@@ -31,12 +31,7 @@
     height: 30rem;
     width: 30rem;
     padding: 2rem;
-    background-color: $color-light-white;
-    background-image: linear-gradient(
-      to right,
-      rgba($color-primary, 0.8),
-      rgba($color-primary-light, 0.8)
-    );
+    background-color: $color-grey-dark-4;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     position: fixed;
     right: 4rem;
