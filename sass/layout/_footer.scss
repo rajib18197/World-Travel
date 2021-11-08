@@ -29,7 +29,6 @@
     }
   }
   &__icons {
-    display: inline-block;
     width: 5rem;
     height: 5rem;
     background-color: $color-primary-dark;
@@ -39,6 +38,11 @@
     transition: all 0.3s;
     &:hover {
       transform: scale(1.1) rotate(0);
+    }
+    @include respond(small-phone) {
+      width: 3rem;
+      height: 3rem;
+      padding: 0.5rem;
     }
   }
   &__icon {
@@ -52,6 +56,10 @@
     transform: rotate(-221deg);
     &:hover {
       transform: rotate(0);
+    }
+    @include respond(small-phone) {
+      width: 2rem;
+      height: 2rem;
     }
   }
 

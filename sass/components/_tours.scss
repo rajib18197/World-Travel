@@ -17,6 +17,9 @@
       float: none;
       width: 100%;
     }
+    @include respond(small-phone) {
+      height: auto;
+    }
   }
   &__picture {
     height: 40rem;

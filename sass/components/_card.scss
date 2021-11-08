@@ -178,6 +178,7 @@
   @include respond(tab-port) {
     height: auto;
     background-color: $color-light-white;
+    margin: 0 4rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-deep, 0.15);
 
@@ -218,5 +219,8 @@
     &__price-value {
       font-size: 4rem;
     }
+  }
+  @include respond(phone) {
+    margin: 0;
   }
 }
