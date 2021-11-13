@@ -170,7 +170,7 @@ body {
     text-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700; }
   @media only screen and (max-width: 30em) {
@@ -178,8 +178,9 @@ body {
       font-size: 1.6rem; } }
 
 .paragraph {
-  font-size: 1.8rem;
-  text-align: justify; }
+  font-size: 1.6rem;
+  text-align: justify;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 30em) {
     .paragraph {
       font-size: 1.6rem;
@@ -427,20 +428,20 @@ body {
 .btn-secondary:hover span {
   animation: none; }
 
-.btn-tertiary:link, .btn-tertiary:visited {
+.btn-text1:link, .btn-text1:visited {
   font-size: 1.4rem;
-  padding: 1rem 1.2rem;
+  padding: 1rem 0.5rem;
   display: inline-block;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 0.4rem solid #c155c5;
+  border-bottom: 0.3rem solid #c155c5;
   position: relative;
   z-index: 2;
   overflow: hidden;
   transition: all 0.45s cubic-bezier(0.645, 0.045, 0.355, 1); }
-  .btn-tertiary:link::after, .btn-tertiary:visited::after {
+  .btn-text1:link::after, .btn-text1:visited::after {
     content: "";
     display: inline-block;
     width: 100%;
@@ -453,9 +454,9 @@ body {
     transform-origin: bottom;
     transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
     z-index: -1; }
-  .btn-tertiary:link:hover, .btn-tertiary:visited:hover {
+  .btn-text1:link:hover, .btn-text1:visited:hover {
     color: #fff; }
-  .btn-tertiary:link:hover::after, .btn-tertiary:link:active::after, .btn-tertiary:visited:hover::after, .btn-tertiary:visited:active::after {
+  .btn-text1:link:hover::after, .btn-text1:link:active::after, .btn-text1:visited:hover::after, .btn-text1:visited:active::after {
     transform-origin: top;
     transform: scaleY(1); }
 
@@ -488,6 +489,9 @@ body {
   transform: scaleY(1);
   transform-origin: left; }
 
+.cards {
+  column-gap: 4.8rem; }
+
 .card {
   /***************************
    Card Functionality
@@ -495,7 +499,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 53rem;
   /***************************
     card forepart styling
   ***************************/
@@ -503,7 +507,7 @@ body {
    card afterwards styling
   ***************************/ }
   .card__side {
-    height: 52rem;
+    height: 53rem;
     transition: all 0.9s ease;
     position: absolute;
     top: 0;
@@ -512,9 +516,10 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
     .card__side--forepart {
-      background-color: #eee; }
+      background-color: #eee;
+      background-color: #f3d9fa; }
     .card__side--afterward {
       transform: rotateY(180deg); }
       .card__side--afterward-1 {
@@ -546,20 +551,20 @@ body {
       background-position: center;
       background-blend-mode: overlay; }
     .card__image--3 {
-      background: linear-gradient(45deg, #000 10%, transparent), linear-gradient(#11a303, #11a303), url(../img/snow.jpg);
+      background: linear-gradient(45deg, #000 10%, transparent), linear-gradient(#e81030, #e81030), url(../img/snow.jpg);
       background-size: cover;
       background-position: center;
       background-blend-mode: overlay; }
   .card__heading {
     font-size: 2.8rem;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     text-align: right;
     color: #eee;
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 75%; }
+    width: 72%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -583,7 +588,7 @@ body {
       text-align: center;
       padding: 1rem; }
       .card__details li:not(:last-child) {
-        border-bottom: 2px solid #f7f7f7; }
+        border-bottom: 2px solid #eee; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -639,12 +644,12 @@ body {
 .composition {
   position: relative; }
   .composition__photo {
-    width: 55%;
+    width: 50%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
-    outline-offset: 2rem; }
+    outline-offset: 1.5rem; }
     @media only screen and (max-width: 59em) {
       .composition__photo {
         float: left;
@@ -653,14 +658,14 @@ body {
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); } }
     .composition__photo--p1 {
       top: -4rem;
-      left: 15rem; }
+      left: 14rem; }
       @media only screen and (max-width: 59em) {
         .composition__photo--p1 {
           top: 0;
           left: 1rem; } }
     .composition__photo--p2 {
       top: 9rem;
-      left: 0rem; }
+      left: 0; }
       @media only screen and (max-width: 59em) {
         .composition__photo--p2 {
           top: -2rem;
@@ -668,7 +673,7 @@ body {
           z-index: 100; } }
     .composition__photo--p3 {
       top: 9rem;
-      right: -3rem; }
+      right: 2rem; }
       @media only screen and (max-width: 59em) {
         .composition__photo--p3 {
           top: 1rem;
@@ -688,7 +693,7 @@ body {
     transform: scale(0.95); }
 
 .about {
-  padding-left: 5rem; }
+  padding-right: 6rem; }
   @media only screen and (max-width: 75em) {
     .about {
       margin-top: 0;
@@ -1274,8 +1279,8 @@ body {
 .grid {
   display: grid; }
   .grid--gap {
-    column-gap: 4.8rem;
-    row-gap: 6.4rem; }
+    column-gap: 6.4rem;
+    row-gap: 9.6rem; }
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr); }
     @media only screen and (max-width: 59em) {
@@ -1290,6 +1295,8 @@ body {
     grid-template-columns: repeat(4, 1fr); }
   .grid--cols {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
+  .grid--center-vertical {
+    align-items: center; }
 
 .header {
   position: relative;
@@ -1428,20 +1435,22 @@ body {
     margin-right: 1rem; }
 
 #section-about {
-  padding: 20rem 0 30rem 0; }
+  padding: 20rem 0 30rem 0;
+  padding: 15rem 0;
+  margin-top: -15vh; }
   @media only screen and (max-width: 59em) {
     #section-about {
       padding: 10rem 0; } }
 
 #section-tours {
-  padding: 20rem 0;
-  margin-top: -5rem; }
+  padding: 20rem 0 0 0;
+  margin-top: -10rem; }
   @media only screen and (max-width: 59em) {
     #section-tours {
       padding: 10rem 0; } }
 
 .section-popular-tours {
-  padding: 20rem 0; }
+  padding: 15rem 0; }
 
 #section-services {
   background-image: linear-gradient(to right, rgba(140, 40, 180, 0.8), rgba(140, 40, 180, 0.8)), url(../img/bg30.jpg);

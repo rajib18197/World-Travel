@@ -19,7 +19,6 @@
   &:hover {
     box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
     transform: translateY(-3px);
-
     &::after {
       transform: scaleX(1.6) scaleY(1.4);
       opacity: 0;
@@ -250,17 +249,17 @@
   }
 }
 
-.btn-tertiary {
+.btn-text1 {
   &:link,
   &:visited {
     font-size: 1.4rem;
-    padding: 1rem 1.2rem;
+    padding: 1rem 0.5rem;
     display: inline-block;
     font-weight: 700;
     color: $color-grey-dark-3;
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 0.4rem solid $color-primary;
+    border-bottom: 0.3rem solid $color-primary;
     position: relative;
     z-index: 2;
     overflow: hidden;

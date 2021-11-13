@@ -1,77 +1,14 @@
-// .composition {
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border: 1rem solid $color-white;
-
-//   &__photo {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     transform: translateY(0.6rem);
-
-//     @include respond(phone) {
-//       width: 85%;
-//       height: 85%;
-//     }
-//     &--2 {
-//       width: 60%;
-//       height: 60%;
-//       object-fit: cover;
-//       position: absolute;
-//       bottom: 15%;
-//       right: -10%;
-//       @include respond(tab-land-small) {
-//         right: -11%;
-//       }
-//       @include respond(tab-port) {
-//         right: 11%;
-//         bottom: 25%;
-//       }
-//       @include respond(phone) {
-//         width: 50%;
-//         height: 50%;
-//         right: 5%;
-//         bottom: 10%;
-//       }
-//     }
-//   }
-//   &::after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: 9%;
-//     left: -7%;
-//     border: 1rem solid $color-primary-dark;
-//     width: 98%;
-//     height: 102%;
-//     z-index: -1;
-//     @include respond(tab-land) {
-//       width: 90%;
-//     }
-
-//     @include respond(tab-port) {
-//       //left: 5%;
-//       display: none;
-//     }
-//     @include respond(phone) {
-//       height: 104%;
-//     }
-//   }
-// }
-
 .composition {
   position: relative;
 
   &__photo {
-    width: 55%;
+    width: 50%;
 
     box-shadow: 0 1.5rem 4rem rgba($color-deep, 0.4);
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
-    outline-offset: 2rem;
+    outline-offset: 1.5rem;
 
     @include respond(tab-port) {
       float: left;
@@ -82,38 +19,31 @@
 
     &--p1 {
       top: -4rem;
-      left: 15rem;
+      left: 14rem;
 
       @include respond(tab-port) {
         top: 0;
         left: 1rem;
-        // transform: scale(1.4);
       }
     }
     &--p2 {
       top: 9rem;
-      left: 0rem;
+      left: 0;
 
       @include respond(tab-port) {
         top: -2rem;
         left: -2rem;
         z-index: 100;
-        // transform: scale(1.4);
       }
     }
     &--p3 {
       top: 9rem;
-      right: -3rem;
+      right: 2rem;
 
       @include respond(tab-port) {
         top: 1rem;
         right: 3.8rem;
-        // transform: scale(1.4);
       }
-
-      // @include respond(tab-land) {
-      //   right: 0;
-      // }
     }
     &--p4 {
       top: 20rem;
@@ -122,7 +52,6 @@
       @include respond(tab-port) {
         top: -1rem;
         left: -8rem;
-        // transform: scale(1.4);
       }
     }
 
@@ -138,7 +67,7 @@
   }
 }
 .about {
-  padding-left: 5rem;
+  padding-right: 6rem;
   @include respond(tab-land) {
     margin-top: 0;
     padding-left: 3rem;

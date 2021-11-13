@@ -1,3 +1,6 @@
+.cards {
+  column-gap: 4.8rem;
+}
 .card {
   /***************************
    Card Functionality
@@ -5,10 +8,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 53rem;
 
   &__side {
-    height: 52rem;
+    height: 53rem;
     transition: all 0.9s ease;
     position: absolute;
     top: 0;
@@ -17,10 +20,11 @@
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-deep, 0.15);
+    box-shadow: 0 2rem 6rem rgba($color-deep, 0.15);
 
     &--forepart {
       background-color: $color-light-white;
+      background-color: #f3d9fa;
     }
     &--afterward {
       transform: rotateY(180deg);
@@ -84,7 +88,7 @@
     }
     &--3 {
       background: linear-gradient(45deg, #000 10%, transparent),
-        linear-gradient(#11a303, #11a303), url(../img/snow.jpg);
+        linear-gradient(#e81030, #e81030), url(../img/snow.jpg);
       background-size: cover;
       background-position: center;
       background-blend-mode: overlay;
@@ -93,14 +97,14 @@
 
   &__heading {
     font-size: 2.8rem;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     text-align: right;
     color: $color-light-white;
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 75%;
+    width: 72%;
   }
   &__heading-span {
     padding: 1rem 1.5rem;
@@ -144,7 +148,7 @@
       text-align: center;
       padding: 1rem;
       &:not(:last-child) {
-        border-bottom: 2px solid $color-dark-white;
+        border-bottom: 2px solid $color-light-white;
       }
     }
   }

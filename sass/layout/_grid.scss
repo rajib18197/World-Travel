@@ -8,12 +8,16 @@
     padding: 2rem;
   }
 }
+// Reusable Grid
 .grid {
   display: grid;
 
+  // &:not(:last-child) {
+  //   margin-bottom: 9.6rem;
+  // }
   &--gap {
-    column-gap: 4.8rem;
-    row-gap: 6.4rem;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
   }
   &--2-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -32,5 +36,8 @@
   }
   &--cols {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+  &--center-vertical {
+    align-items: center;
   }
 }
