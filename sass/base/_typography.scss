@@ -83,7 +83,7 @@ body {
   }
 }
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   text-transform: uppercase;
   font-weight: 700;
   @include respond(small-phone) {
@@ -91,7 +91,7 @@ body {
   }
 }
 .paragraph {
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   text-align: justify;
   margin-bottom: 3rem;
   // &:not(:last-of-type) {

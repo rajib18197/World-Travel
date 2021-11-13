@@ -4,6 +4,7 @@
     margin-bottom: 1rem !important;
   }
 }
+
 .u-margin-bottom-large {
   margin-bottom: 4rem !important;
   @include respond(small-phone) {
@@ -24,19 +25,18 @@
     margin-bottom: 5rem !important;
   }
 }
-.u-margin-top-small {
-  margin-top: 2rem;
-}
-.text-color {
-  color: $color-light-white !important;
-}
 
-.u-center-text {
-  text-align: center !important;
-}
-.u-text {
-  text-align: center !important;
-}
-.text-color {
-  color: $color-white !important;
-}
+// prettier-ignore
+.u-margin-top-small {margin-top: 2rem;}
+
+// prettier-ignore
+.text-color {color: $color-light-white !important;}
+
+// prettier-ignore
+.u-center-text {text-align: center !important;}
+
+// prettier-ignore
+.u-text {text-align: center !important;}
+
+// prettier-ignore
+.text-color {color: $color-white !important;}
